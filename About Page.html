@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head class="header-about">
+    <mate name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>About us Section</title>
+<link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<script src="https://kit.fontawesome.com/bc5217ef57.js" crossorigin="anonymous"></script>
+    </mate>
+</head>
+    <body>
+    <section class="Sub-header">
+         <nav>
+            <a href="index.html"><img src="images/Logo with Name 2.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href="About Page.html">About Us</a></li>
+                         <li><a href="Services.html">Services</a></li>
+                         <li><a href="ContactPage.html">Contact Us</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+     </section>
+     <!------about us content----->
+
+    <div class="heading reveal">
+      <h1>About Us</h1>
+    <p>With over many years of experience in change management, we are adept at<br> helping organizations of all sizes and across various sectors navigate this maze successfully.</p>
+    </div>
+    <section class="container-about">
+      <div class="about">
+        <div class="about-image reveal">
+            <img width="700" height="1010" src="images/64dd1ac5005ff.jpg"/>
+          <!------<video width="900" height="1100" loop autoplay muted>
+  <source src="images/production_id_4630091%20(2160p).mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>------>
+          </div>
+          <div class="about-images reveal">
+              <img width="600" height="500" src="images/closeup-hand-pulling-sticky-note.jpg"/>
+            
+          </div>
+<div class="about-content reveal">
+<h2>Background</h2>
+   <p>At Phenduka Management, we understand that change is both an opportunity and a challenge. It is an opportunity to innovate, grow, and enhance your organizational capabilities, but it also presents a complex maze of decisions, risks, and uncertainties.
+      </p>
+
+<p>We specialize in a comprehensive suite of change management services, each designed to support your organization at every step of its unique change journey:</p> 
+
+ 
+
+<ul>
+    <li><a href="">Strategic Planning and Alignment.</a></li> 
+
+    <li><a href="">Organizational Assessment.</a></li>
+
+    <li><a href="">Change Management Strategy Development.</a></li> 
+
+    <li><a href="">Leadership Development and Coaching.</a></li> 
+
+    <li><a href="">Process Reengineering.</a></li> 
+
+    <li><a href="">Technology Implementation Support.</a></li> 
+
+    <li><a href="">Stakeholder Engagement and Communication.</a></li>
+
+    <li><a href="">Training and Skill Development.</a></li> 
+
+    <li><a href="">Performance Measurement and Analytics.</a></li> 
+
+    <li><a href="">Post-Implementation Support.</a></li> 
+
+    <li><a href="">Crisis Management and Recovery.</a></li>
+
+    <li><a href="">Culture Transformation.</a></li> 
+
+    <li><a href="">Employee Well-being and Support.</a></li> 
+
+    <li><a href="">Compliance and Risk Management.</a></li>
+</ul> 
+            
+
+<p> Our team of seasoned consultants leverages their vast experience and proven methodologies to tailor these services to your unique needs, helping you manage change in a way that aligns with your strategic objectives, values, and culture.</p> 
+
+ 
+
+<p>We focus not just on the change itself but on the people who make it happen. We understand that your employees are your most valuable asset, and we strive to ensure their well-being, engagement, and development through every stage of change. From the initial assessment to post-implementation support, we are there with you, providing the guidance, resources, and training your team needs to embrace change confidently and effectively.</p>
+
+ 
+
+<p>In the face of unexpected events or crises, we stand by your side, offering the expertise to manage the situation and formulate effective recovery strategies. We also ensure that all changes align with legal and regulatory requirements, identifying and mitigating potential risks to secure your organization's future.</p>
+</div>
+</div>
+</section>
+     
+
+   
+
+        <!-------Footer----------->
+
+       <section class="footer reveal">
+        
+            <div >
+                <div class="foot-nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Page.html">About Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="ContactPage.html">Contact Us</a></li>
+                    </ul>
+    
+                </div>
+                
+                <div class="social-links">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-x-twitter"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/phenduka-it-management-consultancy"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p>Made with <i class="fa fa-heart-o"></i> by IT GUYS</p>
+            </div>
+        </section>
+
+   <!------JavaScript for Toggle Menu------->
+    <script>
+        var navlinks = document.getElementById("navLinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+        
+           window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+
+                for (var i = 0; i< reveals.length; i++){
+
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150;
+
+                    if(revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        
+        </script>
+    
+    </body>
+</html>

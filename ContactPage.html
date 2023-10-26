@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <mate name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Phenduka Contant page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer">
+<script src="https://kit.fontawesome.com/bc5217ef57.js" crossorigin="anonymous"></script>
+    </mate>
+</head>
+    <body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Logo with Name 2.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href="About Page.html">About Us</a></li>
+                         <li><a href="Services.html">Services</a></li>
+                         <li><a href="ContactPage.html">Contact Us</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <!-------contact Page------>
+<div class="headingz reveal">
+    <h1>Contact Us</h1>
+</div>
+    <section class="location reveal">
+
+        <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4277376.
+        758950921!2d30.990951999999997!3d-29.845211000000003!3m2!1i1024!2i768!4f13.
+        1!3m3!1m2!1s0x1ef7aa0001bc61b7%3A0xcca75546c4aa6e81!2sDurban!5e1!3m2!1sen!
+        2sza!4v1688481560259!5m2!1sen!2sza" width="600" height="450" style="border:0;
+        " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row reveal">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+27 79 349 8936</h5>
+                        <p>Monday to Friday, 8h30AM to 4h30PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@phenduka.co.za</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            <div class="contact-col reveal">
+                    <form action="">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="email" placeholder="Enter your email address" required>
+                        <input type="text" placeholder="Enter your subject" required>
+                        <textarea rows="8" placeholder="Message" required></textarea>
+                        <button type="submit" class="button">Send Message</button> 
+                    </form>    
+                </div>
+            </div>
+            </div>
+        </section>
+   
+
+        <!-------Footer----------->
+
+        <section class="footer reveal">
+        
+            <div >
+                <div class="foot-nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Page.html">About Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="ContactPage.html">Contact Us</a></li>
+                    </ul>
+    
+                </div>
+                
+                <div class="social-links">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                   <a href=""><i class="fab fa-x-twitter"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/phenduka-it-management-consultancy"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p>Made with <i class="fa fa-heart-o"></i> by IT GUYS</p>
+            </div>
+        </section>
+
+   <!------JavaScript for Toggle Menu------->
+    <script>
+        var navlinks = document.getElementById("navLinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+        
+           window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+
+                for (var i = 0; i< reveals.length; i++){
+
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150;
+
+                    if(revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        
+        </script>
+    
+    </body>
+</html>
